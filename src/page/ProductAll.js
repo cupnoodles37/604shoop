@@ -9,7 +9,7 @@ function ProductAll() {
     const searchQuery=query.get("q") || "";
     //await(비동기적) -> async를 넣어 순서적으로 되게 해야한다.
     console.log(searchQuery);
-    let url = `http://localhost:3005/products?q=${searchQuery}`;
+    let url = `https://my-json-server.typicode.com/cupnoodles37/604shoop/products?q=${searchQuery}`;
     let response = await fetch(url);
     let data = await response.json();
     console.log(data);
