@@ -30,7 +30,7 @@ function ProductDetail() {
     getProductDetail();
   }, []); //배열이 비어있을 때는 함수 실행시 한번만 실행됨.
   const toggle = () => setDropdownOpen((prevState) => !prevState);
-  return (<div className="detail"></div>)(
+  return(
     <Container>
       <Row>
         <Col className="bg-light border product-img" xs="6">
